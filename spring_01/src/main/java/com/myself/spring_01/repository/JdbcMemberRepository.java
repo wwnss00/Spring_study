@@ -2,6 +2,7 @@ package com.myself.spring_01.repository;
 
 import com.myself.spring_01.domain.Member;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -13,6 +14,7 @@ import static java.sql.DriverManager.getConnection;
 //import static jdk.internal.net.http.common.Utils.close;
 import static org.apache.tomcat.util.net.openssl.OpenSSLStatus.getName;
 
+@Repository
 public class JdbcMemberRepository implements MemberRepository{
 
     private final DataSource dataSource;
