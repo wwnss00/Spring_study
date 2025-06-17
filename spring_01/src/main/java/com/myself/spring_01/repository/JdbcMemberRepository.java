@@ -14,7 +14,7 @@ import static java.sql.DriverManager.getConnection;
 //import static jdk.internal.net.http.common.Utils.close;
 import static org.apache.tomcat.util.net.openssl.OpenSSLStatus.getName;
 
-@Repository
+//@Repository
 public class JdbcMemberRepository implements MemberRepository{
 
     private final DataSource dataSource;
