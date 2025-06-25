@@ -16,7 +16,7 @@ public class ConfigurationSingletonTest {
 
         MemberServiceImpl memberService = ac.getBean(MemberServiceImpl.class);
         OrderServiceImpl orderService = ac.getBean(OrderServiceImpl.class);
-        
+
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();
         MemberRepository memberRepository2 = orderService.getMemberRepository();
